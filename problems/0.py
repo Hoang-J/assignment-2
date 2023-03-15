@@ -29,3 +29,10 @@
 #     Hello, Jenna Talia. We've informed the resident that you're here to rob the place.
 
 # TODO write your code here
+
+
+first_name = input('What is your first name? ')
+last_name = input('What is your last name? ')
+why_they_here = input('Why are you here? ')
+
+print("Hello", first_name, last_name + ".", "We've informed the resident that you're here to", why_they_here + ".")
