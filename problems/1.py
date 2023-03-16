@@ -23,3 +23,24 @@
 #   Output: You lose! I was thinking of 4.
 
 # TODO write your code here
+
+
+import random
+
+number = [1, 2, 3, 4, 5]
+
+while True:
+    computer_answer = number[random.randint(0, len(number)-1)]
+    player_guess = int(input('What number between 1 and 5 am I thinking of? '))
+
+    while True:
+        if computer_answer == player_guess:
+            print('Yes! You got it!')
+            break
+        else:
+            ca_string = str(computer_answer)
+            print('Wrong! It was', ca_string + '.')
+            break
+
+
+
