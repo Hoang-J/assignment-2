@@ -33,14 +33,15 @@
 #     Unable to verify credentials. You will be drone-stiked.
 
 database = {
-    "test_username": "test_password"
+    "obama":"bomb_Civilians1234",
+    "donald":"MagaMagaMagaMaga",
+    "joeB":"cornball!"
 }
 
 username = input("Username: ")
-password = "test1234"
+password = input("Password: ")
 
-if username in database:
-    # TODO get correct password from database and compare with input password
+if database.get(username) == password:
     print("You have been verified")
 else:
     print("Unable to verify credentials. You will be drone-stiked.")
